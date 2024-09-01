@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Example of a Switch Preference -->
+    <SwitchPreferenceCompat
+        android:key="notifications"
+        android:title="Enable Notifications"
+        android:summary="Receive notifications for budget limits and financial updates"
+        android:defaultValue="true" />
+
+    <!-- Example of a List Preference -->
+    <ListPreference
+        android:key="currency"
+        android:title="Select Currency"
+        android:summary="Choose your preferred currency"
+        android:entries="@array/currency_options"
+        android:entryValues="@array/currency_values"
+        android:defaultValue="USD" />
+
+    <!-- Example of an EditText Preference -->
+    <EditTextPreference
+        android:key="username"
+        android:title="Username"
+        android:summary="Set your username for the app"
+        android:defaultValue="User" />
+
+</PreferenceScreen>

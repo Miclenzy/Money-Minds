@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/baseline_note_24"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_financial_overview"
+            android:icon="@drawable/baseline_account_balance_24"
+            android:title="Financial Overview" />
+        <item
+            android:id="@+id/nav_budget_planner"
+            android:icon="@drawable/icons8_budget_50"
+            android:title="Budget Planner" />
+        <item
+            android:id="@+id/nav_financial_goals"
+            android:icon="@drawable/baseline_calendar_month_24"
+            android:title="Financial Goals" />
+    </group>
+</menu>

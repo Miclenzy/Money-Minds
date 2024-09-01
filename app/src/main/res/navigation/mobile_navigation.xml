@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.technolenz.moneyminds.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home"
+        app:defaultNavHost="true"/>
+
+    <fragment
+        android:id="@+id/nav_financial_overview"
+        android:name="com.technolenz.moneyminds.FinancialOverviewFragment"
+        android:label="Financial Overview"
+        tools:layout="@layout/fragment_home"
+        app:defaultNavHost="true"/>
+
+    <fragment
+        android:id="@+id/nav_budget_planner"
+        android:name="com.technolenz.moneyminds.BudgetPlannerFragment"
+        android:label="Budget Planner"
+        tools:layout="@layout/fragment_budget_planner"
+        app:defaultNavHost="true"/>
+    <action
+        android:id="@+id/action_budgetPlannerFragment_to_financialOverviewFragment"
+        app:destination="@id/nav_financial_overview" />
+
+    <fragment
+        android:id="@+id/nav_financial_goals"
+        android:name="com.technolenz.moneyminds.FinancialGoalsFragment"
+        android:label="Financial Goals"
+        tools:layout="@layout/fragment_financial_goals"
+        app:defaultNavHost="true"/>
+
+</navigation>

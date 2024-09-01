@@ -24,7 +24,7 @@ If you want to dive into the code or contribute to the development:
 Clone the repository:
 bash
 Copy code
-git clone https://github.com/yourusername/money-minds-app.git
+git clone https://github.com/miclenzy/money-minds.git
 Navigate into the project directory:
 bash
 Copy code
